@@ -4,7 +4,7 @@
 # Runnig the webservice
    npm start
 
-# Docker Compose Stack for My Awesome Application
+# Docker Compose Stack for this application
 
 This Docker Compose stack includes the necessary services to run this application.
 
