@@ -1,0 +1,26 @@
+version: "3"
+services:
+  # Node.js Application Service
+  app:
+    build:
+      context: .
+      dockerfile: dockerfile-app
+    ports:
+      - "3000:3000"
+    networks:
+      - mynetwork
+    depends_on:
+      - db
+
+  # MongoDB Database Service
+  db:
+    build:
+      context: .
+      dockerfile: dockerfile-db
+    ports:
+      - "27017:27017"
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
