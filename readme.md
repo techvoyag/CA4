@@ -22,13 +22,13 @@ Before you begin, ensure you have the following software installed:
    ```bash
    git clone https://github.com/techvoyag/CA4.git
 
-   Navigate to the project repo
+Navigate to the project repo
 
-   cd your-repo
+   cd CA4
 
 2.Run the Docker Compose stack:
 
-docker-compose up
+   docker-compose up
 
 The services will start, and you can access the application at http://localhost:3000.
 
