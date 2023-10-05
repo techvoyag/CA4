@@ -13,8 +13,6 @@ RUN npm install
 # Copy the entire application code to the working directory
 COPY . .
 
-# Build the React app (replace 'npm run build' with your actual build command)
-RUN npm run build
 
 # Expose the port on which your app will run (adjust as needed)
 EXPOSE 5000
