@@ -1,6 +1,10 @@
 20p0619-member3
 database
+docker compose
 
 20p0199-member-2
 web service
+
+20i0689
+docker compose
 
