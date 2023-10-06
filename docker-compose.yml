@@ -2,9 +2,7 @@ version: "3"
 services:
   # Node.js Application Service
   app:
-    build:
-      context: .
-      dockerfile: dockerfile-app
+    image: techvoyag/ca4frontend:lastest
     ports:
       - "3000:3000"
     networks:
@@ -14,9 +12,7 @@ services:
 
   # MongoDB Database Service
   db:
-    build:
-      context: .
-      dockerfile: dockerfile-db
+    image: techvoyag/ca4db:lastest
     ports:
       - "27017:27017"
     networks:
