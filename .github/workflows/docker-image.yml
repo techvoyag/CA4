@@ -22,4 +22,5 @@ jobs:
       run: docker build . --file Dockerfile --tag techvoyag/ca4db:latest
     - name: Push Docker image
       run: |
+        docker tag techvoyag/ca4db:latest ${{ secrets.DOCKER_USERNAME }}/techvoyag/ca4db:latest
         docker push ${{ secrets.DOCKER_USERNAME }}/techvoyag/ca4db:latest
