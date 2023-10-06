@@ -2,7 +2,7 @@ version: "3"
 services:
   # Node.js Application Service
   app:
-    image: techvoyag/ca4frontend:lastest
+    image: techvoyag/ca4frontend
     ports:
       - "3000:3000"
     networks:
@@ -12,7 +12,7 @@ services:
 
   # MongoDB Database Service
   db:
-    image: techvoyag/ca4db:lastest
+    image: techvoyag/ca4db
     ports:
       - "27017:27017"
     networks:
